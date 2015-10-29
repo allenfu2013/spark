@@ -15,11 +15,17 @@ object CollectionOperations extends App {
   println(l.filter(x => x % 2 == 0))
   println(l.filter(_ % 2 == 0))
   println(l.partition(_ % 2 == 0))
+  val l2 = 0 :: l
+  println(l2)
+
+  val oneTwoThree = 1 :: 2 :: 3 :: Nil
+  println(oneTwoThree)
 
   val a = List(1, 2, 3)
   val b = List(4, 5, 6, 7)
   println(a zip b)
   println(a.zip(b))
+  println(a ::: b)
 
   val c = List(List("a", "b"), List("c", "d"))
   println(c)

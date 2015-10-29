@@ -63,5 +63,10 @@ object HelloScala{
 
     val newL = l.map((x:Int) => 2*x)
     newL.foreach(x=>println(x))
+
+    val list = List(3,4)
+    for(l <- list){
+      println(l)
+    }
   }
 }
