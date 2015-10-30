@@ -1,5 +1,7 @@
 package allen.scala.lesson5
 
+import java.io.{IOException, FileNotFoundException, FileReader}
+
 import scala.io.Source
 
 /**
@@ -9,8 +11,8 @@ class ScalaIO {
 
 }
 
-object ScalaIO extends App{
-  for(line <- Source.fromFile("E:\\Work\\github\\spark\\README.md").getLines()){
+object ScalaIO extends App {
+  for (line <- Source.fromFile("E:\\Work\\github\\spark\\README.md").getLines()) {
     println(line.length + " " + line)
   }
 }
